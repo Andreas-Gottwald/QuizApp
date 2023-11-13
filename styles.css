@@ -1,0 +1,82 @@
+h1 {
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 15px solid black;
+  margin-bottom: 20px;
+}
+
+section {
+  position: relative;
+  bottom: 15px;
+  background-color: ;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  margin-top: 10px;
+}
+
+div {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  margin-top: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+p {
+  font-size: 18px;
+  color: green;
+  display: none;
+}
+
+input[type="checkbox"]:checked + label + #answer {
+  display: block;
+}
+
+.section2 {
+  position: relative;
+  bottom: 20px;
+  background-color: ;
+  border: 5px solid black;
+  margin-bottom: 20px;
+}
+ul {
+  list-style: none;
+}
+.list {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.list1 {
+  position: relative;
+  top: 73px;
+  right: 265px;
+}
+
+.list2 {
+  position: relative;
+  top: 73px;
+  right: 263px;
+}
+
+.list3 {
+  position: relative;
+  top: 73px;
+  right: 260px;
+}
