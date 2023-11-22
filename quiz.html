@@ -5,28 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <h1>Quiz App</h1>
     <main>
       <section>
         <h2 id="question">Warum sind die Schlümpfe blau?</h2>
-        <input type="checkbox" id="showAnswer" />
-        <label for="showAnswer">Show answer</label>
-        <p id="answer">Weil sie saufen wie die sau!</p>
-        <ul class="list">
-          <li class="list1">#HTML</li>
-          <li class="list2">#Flexbox</li>
-          <li class="list3">#CSS</li>
-        </ul>
-      </section>
+        <button class="card__button-answer" type="button">Show answer</button>
+        <p class="answer">deshalb</p>
 
-      <section class="section2">
-        <h2 id="question">Warum sind die Schlümpfe blau?</h2>
-        <input type="checkbox" id="showAnswer" />
-        <label for="showAnswer">Show answer</label>
-        <p id="answer">Weil sie saufen wie die sau!</p>
-      </section>
+        <ul class="card__tag-list">
+          <li class="card__tag-list-item">#HTML</li>
+          <li class="card__tag-list-item">#Flexbox</li>
+          <li class="card__tag-list-item">#CSS</li>
+        </ul>
+        <div class="card__button-bookmark">
+          <button
+            class="bookmark"
+            aria-label="bookmark"
+            type="button"
+            data-js="button-toggle"
+          >
+            <svg
+              class="bookmark__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 24 24"
+            >
+              <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+            </svg>
+          </button>
+        </div>
+      
     </main>
   </body>
 </html>
