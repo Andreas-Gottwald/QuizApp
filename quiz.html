@@ -8,18 +8,32 @@
     <script src="./index.js" defer></script>
   </head>
   <body>
+    <nav></nav>
     <h1>Quiz App</h1>
     <main>
-      <section>
-        <h2 id="question">Warum sind die Schlümpfe blau?</h2>
-        <button class="card__button-answer" type="button">Show answer</button>
-        <p class="answer">deshalb</p>
+      <article>
+        <h2>Warum verstehe ich das alles nicht?</h2>
+        <p id="frage">Hier wird die Frage angezeigt.</p>
+        <button class="card__button-answer" id="antwortButton">
+          Antwort anzeigen
+        </button>
+        <button
+          class="card__button-answer"
+          id="verbergenButton"
+          style="display: none"
+        >
+          Antwort verbergen
+        </button>
+        <p class="antwort-text" id="antwort" style="display: none">
+          Hier wird die Antwort angezeigt.
+        </p>
 
         <ul class="card__tag-list">
-          <li class="card__tag-list-item">#HTML</li>
-          <li class="card__tag-list-item">#Flexbox</li>
-          <li class="card__tag-list-item">#CSS</li>
+          <li class="card__tag-list-item"># 😒</li>
+          <li class="card__tag-list-item"># 😠</li>
+          <li class="card__tag-list-item"># 😢</li>
         </ul>
+
         <div class="card__button-bookmark">
           <button
             class="bookmark"
@@ -36,7 +50,24 @@
             </svg>
           </button>
         </div>
-      
+      </article>
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list-item navigation__list-item--active">
+            <a class="navigation__link" href="/index.html">Home</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="/bookmarks.html">Bookmarks</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="/profile.html">Profile</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="form.html">Form</a>
+          </li>
+        </ul>
+      </nav>
     </main>
   </body>
 </html>
