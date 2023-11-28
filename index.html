@@ -11,9 +11,16 @@
     <nav></nav>
     <h1>Quiz App</h1>
     <main>
+      <button
+        class="nicht-druecken-knopf"
+        data-js="nicht-druecken"
+        type="button"
+      >
+        dont push!
+      </button>
       <article>
-        <h2>Warum verstehe ich das alles nicht?</h2>
-        <p id="frage">Hier wird die Frage angezeigt.</p>
+        <h2 data-js="button-toggle">Warum verstehe ich das alles nicht?</h2>
+
         <button class="card__button-answer" id="antwortButton">
           Antwort anzeigen
         </button>
@@ -24,9 +31,7 @@
         >
           Antwort verbergen
         </button>
-        <p class="antwort-text" id="antwort" style="display: none">
-          Hier wird die Antwort angezeigt.
-        </p>
+        <p class="antwort-text" id="antwort" style="display: none"></p>
 
         <ul class="card__tag-list">
           <li class="card__tag-list-item"># 😒</li>
