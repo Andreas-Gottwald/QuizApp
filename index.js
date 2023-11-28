@@ -124,7 +124,7 @@ dontPush.addEventListener("click", function () {
 
   // Erstelle ein neues Element für den "disco"-Text
   const discoText = document.createElement("div");
-  discoText.textContent = "disco";
+  discoText.textContent = "idiot";
 
   const bild = document.createElement("img");
   bild.src = "oldme.jpg"; // Hier den Pfad zum Bild einfügen
@@ -145,7 +145,7 @@ dontPush.addEventListener("click", function () {
   discoText.style.left = "50%";
   discoText.style.transform = "translate(-50%, -50%)";
   discoText.style.fontSize = "55em";
-  discoText.style.color = "hotpink"; // Farbe nach Bedarf ändern
+  discoText.style.color = "black"; // Farbe nach Bedarf ändern
 
   // Füge das Element zum Body hinzu
   document.body.appendChild(discoText);
